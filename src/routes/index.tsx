@@ -82,7 +82,7 @@ function Index() {
             Currently
           </p>
           <p className="text-xl md:text-3xl lg:text-4xl font-light leading-snug max-w-3xl text-stone-deep">
-            Honestly just trying to make my life easier, one script at a time.
+            On Holiday. But you can still check out my stuff below
           </p>
           <Link
             to="/projects"
