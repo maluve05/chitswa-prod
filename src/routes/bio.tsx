@@ -38,7 +38,7 @@ function Bio() {
             Currently based in Lisbon, I still learning so i do a little bit of everything right now.
           </p>
           <p>
-            If you want to collaborate on a project or share an interesting problem,
+            If you want to collaborate on a project or share an interesting problem, or just want to say hi,
             hit me up <a href="mailto:malvin@chitswa.com" className="link-quiet border-b border-foreground/40 pb-0.5 hover:text-foreground transition-colors">malvin@chitswa.com</a>.
           </p>
         </div>
