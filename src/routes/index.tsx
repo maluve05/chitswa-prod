@@ -3,7 +3,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
 import lisbonUrl from "@/assets/lisbon-street.webp";
-import presentationUrl from "@/assets/presentation.webp";
+import presentationUrl from "@/assets/deans-challenge.jpg";
 import hackathon1Url from "@/assets/hackathon-1.webp";
 import hackathon2Url from "@/assets/hackathon-2.webp";
 
