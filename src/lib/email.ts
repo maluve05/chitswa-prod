@@ -21,6 +21,7 @@ export const sendContactEmail = createServerFn({ method: "POST" })
       const response = await env.EMAIL.send({
         to: "malvin@chitswa.com",
         from: "contact@chitswa.com",
+        replyTo: data.email,
         subject: `New Message from ${data.name}`,
         text: `Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`,
         html: `
