@@ -19,7 +19,7 @@ function About() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <SiteNav />
-      <div className="max-w-3xl mx-auto px-6 md:px-10 pt-40 pb-24 fade-in">
+      <div className="max-w-3xl mx-auto px-6 md:px-10 pt-32 md:pt-40 pb-24 fade-in">
         <p className="text-[11px] tracking-[0.25em] uppercase text-muted-foreground mb-8">
           About
         </p>
