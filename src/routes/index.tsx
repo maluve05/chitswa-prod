@@ -37,7 +37,7 @@ function Index() {
           <p className="text-[11px] tracking-[0.25em] uppercase text-muted-foreground mb-6 md:mb-8">
             Portfolio · Lisbon
           </p>
-          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-light tracking-tight leading-[1.02] text-stone-deep">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-light tracking-tight leading-[1.02] text-stone-deep break-words">
             Malvin
             <br />
             Chitswamatombo.
@@ -56,7 +56,7 @@ function Index() {
         </div>
       </section>
 
-      <section className="relative min-h-[55vh] md:min-h-[70vh] overflow-hidden">
+      <section className="relative min-h-[50vh] md:min-h-[70vh] overflow-hidden">
         <div className="absolute inset-0">
           {[lisbonAsset.url, hackathon1Asset.url, hackathon2Asset.url].map((src, i) => (
             <img
@@ -70,7 +70,7 @@ function Index() {
           ))}
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/40 to-background" />
-        <div className="relative max-w-6xl mx-auto px-6 md:px-10 py-20 md:py-32">
+        <div className="relative max-w-6xl mx-auto px-6 md:px-10 py-16 md:py-32">
           <p className="text-[11px] tracking-[0.25em] uppercase text-muted-foreground mb-6">
             Currently
           </p>
