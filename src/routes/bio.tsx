@@ -6,10 +6,10 @@ import { SiteFooter } from "@/components/site-footer";
 export const Route = createFileRoute("/bio")({
   head: () => ({
     meta: [
-      { title: "Bio — chitswa" },
-      { name: "description", content: "A short bio of Malvin Chitswamatombo." },
-      { property: "og:title", content: "Bio — chitswa" },
-      { property: "og:description", content: "A short bio of Malvin Chitswamatombo." },
+      { title: "Bio | chitswa" },
+      { name: "description", content: "About Malvin Chitswamatombo." },
+      { property: "og:title", content: "Bio | chitswa" },
+      { property: "og:description", content: "About Malvin Chitswamatombo." },
     ],
     links: [{ rel: "canonical", href: "/bio" }],
   }),
@@ -30,17 +30,16 @@ function Bio() {
 
         <div className="mt-16 space-y-8 text-lg font-light leading-relaxed text-foreground/85">
           <p>
-            I build small software that quietly makes days easier. Most of it starts as a
-            frustration — a form I hate filling out, a workout I keep skipping, a public
-            dataset nobody reads.
+            I build software to solve everyday frustrations. Most of my projects start
+            because a tool I need doesn't exist, a workflow is too slow, or some useful
+            public data is buried and hard to access.
           </p>
           <p>
-            I live between Lisbon and the internet. I like early mornings, long walks,
-            hackathons that end at sunrise, and code that survives its first user.
+            Currently based in Lisbon, I still learning so i do a little bit of everything right now.
           </p>
           <p>
-            If any of this resonates — or if you have a problem worth solving — my inbox
-            is open.
+            If you want to collaborate on a project or share an interesting problem,
+            hit me up <a href="mailto:malvin@chitswa.com" className="link-quiet border-b border-foreground/40 pb-0.5 hover:text-foreground transition-colors">malvin@chitswa.com</a>.
           </p>
         </div>
 

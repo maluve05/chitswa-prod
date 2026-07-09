@@ -50,7 +50,7 @@ function Index() {
             Chitswamatombo.
           </h1>
           <p className="mt-6 md:mt-8 text-base md:text-lg lg:text-xl text-muted-foreground font-light max-w-xl">
-            Developing web applications and clean user interfaces.
+            21 Year Old. I occassionally do something useful.
           </p>
           <div className="mt-10 md:mt-14 flex flex-wrap items-center gap-4 md:gap-6 text-[13px]">
             <Link to="/projects" className="link-quiet border-b border-foreground/40 pb-1">
@@ -84,7 +84,7 @@ function Index() {
             Currently
           </p>
           <p className="text-xl md:text-3xl lg:text-4xl font-light leading-snug max-w-3xl text-stone-deep">
-            Building responsive tools, clean user interfaces, and custom web applications.
+            Honestly just trying to make my life easier, one script at a time.
           </p>
           <Link
             to="/projects"

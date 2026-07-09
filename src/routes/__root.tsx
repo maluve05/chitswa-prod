@@ -19,7 +19,7 @@ function NotFoundComponent() {
         <h1 className="text-7xl font-bold text-foreground">404</h1>
         <h2 className="mt-4 text-xl font-semibold text-foreground">Page not found</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          The page you're looking for doesn't exist or has been moved.
+          My bad, seems I messed up somewhere. Head back to the homepage.
         </p>
         <div className="mt-6">
           <Link
@@ -48,7 +48,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
           This page didn't load
         </h1>
         <p className="mt-2 text-sm text-muted-foreground">
-          Something went wrong on our end. You can try refreshing or head back home.
+          My bad, seems I messed up somewhere. Head back to the homepage.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-2">
           <button
