@@ -2,12 +2,17 @@ import { useState, useEffect } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
-import lisbonAsset from "@/assets/lisbon-street.jpg.asset.json";
-import presentationAsset from "@/assets/presentation.jpg.asset.json";
-import hackathon1Asset from "@/assets/hackathon-1.jpg.asset.json";
-import hackathon2Asset from "@/assets/hackathon-2.jpg.asset.json";
+import lisbonAsset from "@/assets/lisbon-street.webp.asset.json";
+import presentationAsset from "@/assets/presentation.webp.asset.json";
+import hackathon1Asset from "@/assets/hackathon-1.webp.asset.json";
+import hackathon2Asset from "@/assets/hackathon-2.webp.asset.json";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    links: [
+      { rel: "preload", as: "image", href: presentationAsset.url, fetchpriority: "high" },
+    ],
+  }),
   component: Index,
 });
 
@@ -30,6 +35,8 @@ function Index() {
           src={presentationAsset.url}
           alt=""
           aria-hidden
+          fetchPriority="high"
+          decoding="async"
           className="absolute inset-0 w-full h-full object-cover opacity-[0.18]"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/75 via-background/60 to-background" />
@@ -64,6 +71,8 @@ function Index() {
               src={src}
               alt=""
               aria-hidden
+              loading="lazy"
+              decoding="async"
               className="absolute inset-0 w-full h-full object-cover grayscale-[20%] saturate-[0.7] transition-opacity duration-[1800ms] ease-in-out"
               style={{ opacity: active === i ? 0.5 : 0 }}
             />
