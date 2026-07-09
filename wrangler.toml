@@ -1,7 +1,6 @@
 name = "chitswa-prod"
 compatibility_date = "2026-07-09"
 compatibility_flags = ["nodejs_compat"]
-main = ".worker-build/index.js"
 
 [observability]
 enabled = true
