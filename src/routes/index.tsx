@@ -25,7 +25,7 @@ function Index() {
     <div className="min-h-screen bg-background text-foreground">
       <SiteNav />
 
-      <section className="relative min-h-[85vh] md:min-h-screen flex items-center overflow-hidden">
+      <section className="relative min-h-[75vh] md:min-h-screen flex items-center overflow-hidden">
         <img
           src={presentationAsset.url}
           alt=""
@@ -33,11 +33,11 @@ function Index() {
           className="absolute inset-0 w-full h-full object-cover opacity-[0.18]"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/75 via-background/60 to-background" />
-        <div className="relative max-w-6xl mx-auto px-6 md:px-10 pt-28 md:pt-32 pb-20 md:pb-24 w-full fade-in">
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 md:px-10 pt-24 md:pt-32 pb-16 md:pb-24 w-full fade-in">
           <p className="text-[11px] tracking-[0.25em] uppercase text-muted-foreground mb-6 md:mb-8">
             Portfolio · Lisbon
           </p>
-          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-light tracking-tight leading-[1.02] text-stone-deep break-words">
+          <h1 className="text-2xl sm:text-4xl md:text-6xl lg:text-8xl font-light tracking-tight leading-[1.02] text-stone-deep break-words">
             Malvin
             <br />
             Chitswamatombo.
