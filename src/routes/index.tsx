@@ -12,6 +12,15 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
+  const [active, setActive] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActive((prev) => (prev + 1) % 3);
+    }, 5500);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <SiteNav />
