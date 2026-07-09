@@ -46,8 +46,6 @@ function Index() {
           </p>
           <h1 className="text-2xl sm:text-4xl md:text-6xl lg:text-8xl font-light tracking-tight leading-[1.02] text-stone-deep break-words">
             Malvin
-            <br />
-            Chitswamatombo.
           </h1>
           <p className="mt-6 md:mt-8 text-base md:text-lg lg:text-xl text-muted-foreground font-light max-w-xl">
             21 Year Old. I occassionally do something useful.

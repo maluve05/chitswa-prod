@@ -35,7 +35,7 @@ function Bio() {
             public data is buried and hard to access.
           </p>
           <p>
-            Currently based in Lisbon, I still learning so i do a little bit of everything right now.
+            Currently based in Lisbon, still learning so i do a little bit of everything right now.
           </p>
           <p>
             If you want to collaborate on a project or share an interesting problem, or just want to say hi,
