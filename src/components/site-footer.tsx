@@ -5,9 +5,9 @@ export function SiteFooter() {
         <div className="tracking-wide uppercase">Connect</div>
         <div className="flex flex-wrap gap-x-8 gap-y-2">
           <a
-            href="https://www.linkedin.com/in/malvin-chitswamatombo-861b06207?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+            href="https://www.linkedin.com/in/malvin-chitswamatombo-861b06207"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="link-quiet"
           >
             LinkedIn
