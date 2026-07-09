@@ -15,7 +15,7 @@ export function SiteFooter() {
           <a
             href="https://instagram.com/maluve.05"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="link-quiet"
           >
             Instagram
