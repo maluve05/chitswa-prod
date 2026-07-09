@@ -71,6 +71,8 @@ function Index() {
               src={src}
               alt=""
               aria-hidden
+              loading="lazy"
+              decoding="async"
               className="absolute inset-0 w-full h-full object-cover grayscale-[20%] saturate-[0.7] transition-opacity duration-[1800ms] ease-in-out"
               style={{ opacity: active === i ? 0.5 : 0 }}
             />
