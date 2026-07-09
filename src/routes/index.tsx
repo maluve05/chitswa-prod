@@ -32,7 +32,7 @@ function Index() {
 
       <section className="relative min-h-[75vh] md:min-h-screen flex items-center overflow-hidden">
         <img
-          src={presentationAsset.url}
+          src={presentationUrl}
           alt=""
           aria-hidden
           fetchPriority="high"
@@ -65,7 +65,7 @@ function Index() {
 
       <section className="relative min-h-[50vh] md:min-h-[70vh] overflow-hidden">
         <div className="absolute inset-0">
-          {[lisbonAsset.url, hackathon1Asset.url, hackathon2Asset.url].map((src, i) => (
+          {[lisbonUrl, hackathon1Url, hackathon2Url].map((src, i) => (
             <img
               key={src}
               src={src}
