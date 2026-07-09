@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
 
@@ -34,11 +34,20 @@ function About() {
           </div>
           <div className="space-y-6">
             <h2 className="text-[11px] tracking-[0.2em] uppercase text-muted-foreground">How to reach me</h2>
-            <p>Feel free to reach out via email or connect with me on LinkedIn. I'm always open to talking about software development, design, and interesting tech ideas.</p>
+            <p>
+              Feel free to reach out via my{" "}
+              <Link
+                to="/bio"
+                className="link-quiet border-b border-foreground/40 pb-0.5 hover:text-foreground transition-colors"
+              >
+                bio
+              </Link>{" "}
+              or connect with me on LinkedIn. I'm always open to talking about software development, design, and interesting tech ideas.
+            </p>
           </div>
           <div className="space-y-6">
             <h2 className="text-[11px] tracking-[0.2em] uppercase text-muted-foreground">What I care about</h2>
-            <p>Clear, responsive interfaces, intuitive user experiences, and clean codebases. I focus on utility and solving actual user frustrations.</p>
+            <p>Getting things done.</p>
           </div>
           <div className="space-y-6">
             <h2 className="text-[11px] tracking-[0.2em] uppercase text-muted-foreground">What I avoid</h2>

@@ -9,6 +9,10 @@ import hackathon2Url from "@/assets/hackathon-2.webp";
 
 export const Route = createFileRoute("/")({
   head: () => ({
+    meta: [
+      { title: "Chitswa" },
+      { property: "og:title", content: "Chitswa" },
+    ],
     links: [
       { rel: "preload", as: "image", href: presentationUrl, fetchPriority: "high" },
     ],
