@@ -35,6 +35,8 @@ function Index() {
           src={presentationAsset.url}
           alt=""
           aria-hidden
+          fetchPriority="high"
+          decoding="async"
           className="absolute inset-0 w-full h-full object-cover opacity-[0.18]"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/75 via-background/60 to-background" />
