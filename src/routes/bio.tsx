@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
-import hackathon2Asset from "@/assets/hackathon-2.jpg.asset.json";
+
 
 export const Route = createFileRoute("/bio")({
   head: () => ({
@@ -44,13 +44,6 @@ function Bio() {
           </p>
         </div>
 
-        <div className="mt-20 relative aspect-[16/10] overflow-hidden bg-sand">
-          <img
-            src={hackathon2Asset.url}
-            alt="Malvin working at a hackathon"
-            className="w-full h-full object-cover"
-          />
-        </div>
       </div>
       <SiteFooter />
     </div>
