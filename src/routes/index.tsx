@@ -30,15 +30,9 @@ function Index() {
           src={presentationAsset.url}
           alt=""
           aria-hidden
-          className="absolute inset-0 w-full h-full object-cover opacity-[0.18] mix-blend-multiply"
+          className="absolute inset-0 w-full h-full object-cover opacity-[0.18]"
         />
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(180deg, oklch(0.985 0.008 80 / 0.75) 0%, oklch(0.985 0.008 80 / 0.6) 50%, oklch(0.985 0.008 80) 100%)",
-          }}
-        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/75 via-background/60 to-background" />
         <div className="relative max-w-6xl mx-auto px-6 md:px-10 pt-32 pb-24 w-full fade-in">
           <p className="text-[11px] tracking-[0.25em] uppercase text-muted-foreground mb-8">
             Portfolio · Lisbon
