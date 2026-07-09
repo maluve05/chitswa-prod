@@ -2,15 +2,15 @@ import { useState, useEffect } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
-import lisbonAsset from "@/assets/lisbon-street.webp.asset.json";
-import presentationAsset from "@/assets/presentation.webp.asset.json";
-import hackathon1Asset from "@/assets/hackathon-1.webp.asset.json";
-import hackathon2Asset from "@/assets/hackathon-2.webp.asset.json";
+import lisbonUrl from "@/assets/lisbon-street.webp";
+import presentationUrl from "@/assets/presentation.webp";
+import hackathon1Url from "@/assets/hackathon-1.webp";
+import hackathon2Url from "@/assets/hackathon-2.webp";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     links: [
-      { rel: "preload", as: "image", href: presentationAsset.url, fetchpriority: "high" },
+      { rel: "preload", as: "image", href: presentationUrl, fetchpriority: "high" },
     ],
   }),
   component: Index,
