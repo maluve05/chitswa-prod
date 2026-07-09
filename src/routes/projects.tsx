@@ -5,13 +5,13 @@ import { SiteFooter } from "@/components/site-footer";
 export const Route = createFileRoute("/projects")({
   head: () => ({
     meta: [
-      { title: "Projects — chitswa" },
+      { title: "Projects | chitswa" },
       {
         name: "description",
         content:
           "A collection of tools and experiments by Malvin Chitswamatombo.",
       },
-      { property: "og:title", content: "Projects — chitswa" },
+      { property: "og:title", content: "Projects | chitswa" },
       {
         property: "og:description",
         content:
@@ -39,7 +39,7 @@ const projects: Project[] = [
   {
     title: "Move Mentor",
     description:
-      "A guided walkthrough of the Erasmus+ application process — built to eliminate the confusion that comes with navigating university mobility programs solo.",
+      "A step-by-step guide for the Erasmus+ application process. Designed to help students navigate university mobility programs without the usual administrative confusion.",
     tags: ["React", "Vite", "Student Tools"],
     status: "live",
     href: "https://move-mentor.app",
@@ -48,7 +48,7 @@ const projects: Project[] = [
   {
     title: "chitswa",
     description:
-      "This site. A personal hub for projects, thoughts, and contact. Built with TanStack Start and a strong preference for quiet design.",
+      "Personal website and project repository built with TanStack Start, React, and Tailwind.",
     tags: ["TanStack Start", "React", "Tailwind"],
     status: "live",
     href: "https://chitswa.com",
@@ -167,8 +167,7 @@ function Projects() {
           Things I've built.
         </h1>
         <p className="mt-6 text-base md:text-lg font-light text-muted-foreground max-w-xl leading-relaxed">
-          Small tools. Mostly born out of frustration, occasionally out of
-          curiosity.
+          A collection of utilities, web applications, and ongoing experiments.
         </p>
 
         {/* Live */}
