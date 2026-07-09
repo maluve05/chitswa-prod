@@ -10,7 +10,7 @@ import hackathon2Url from "@/assets/hackathon-2.webp";
 export const Route = createFileRoute("/")({
   head: () => ({
     links: [
-      { rel: "preload", as: "image", href: presentationUrl, fetchpriority: "high" },
+      { rel: "preload", as: "image", href: presentationUrl, fetchPriority: "high" },
     ],
   }),
   component: Index,
