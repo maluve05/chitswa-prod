@@ -94,6 +94,25 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap",
       },
     ],
+    scripts: [
+      {
+        type: "text/javascript",
+        children: `
+          (function () {
+            function sync() {
+              document.documentElement.classList.toggle(
+                "dark",
+                window.matchMedia("(prefers-color-scheme: dark)").matches
+              );
+            }
+            sync();
+            window
+              .matchMedia("(prefers-color-scheme: dark)")
+              .addEventListener("change", sync);
+          })();
+        `,
+      },
+    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
