@@ -62,7 +62,7 @@ function Index() {
         </div>
       </section>
 
-      <section className="relative h-[75vh] min-h-[560px] overflow-hidden">
+      <section className="relative min-h-[70vh] overflow-hidden">
         <div className="absolute inset-0">
           {[lisbonAsset.url, hackathon1Asset.url, hackathon2Asset.url].map((src, i) => (
             <img
@@ -71,29 +71,21 @@ function Index() {
               alt=""
               aria-hidden
               className="absolute inset-0 w-full h-full object-cover grayscale-[20%] saturate-[0.7] transition-opacity duration-[1800ms] ease-in-out"
-              style={{ opacity: active === i ? 0.4 : 0 }}
+              style={{ opacity: active === i ? 0.5 : 0 }}
             />
           ))}
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/15 to-background" />
-        <div className="relative h-full max-w-6xl mx-auto px-6 md:px-10 flex items-end pb-24">
-          <p className="text-sm text-muted-foreground max-w-md font-light">
-            Notes from the road — hackathons, presentations, and the small streets of Lisbon that keep the ideas warm.
-          </p>
-        </div>
-      </section>
-
-      <section className="mt-16 bg-stone-deep text-background">
-        <div className="max-w-6xl mx-auto px-6 md:px-10 py-32">
-          <p className="text-[11px] tracking-[0.25em] uppercase opacity-60 mb-6">
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/40 to-background" />
+        <div className="relative max-w-6xl mx-auto px-6 md:px-10 py-32">
+          <p className="text-[11px] tracking-[0.25em] uppercase text-muted-foreground mb-6">
             Currently
           </p>
-          <p className="text-2xl md:text-4xl font-light leading-snug max-w-3xl">
+          <p className="text-2xl md:text-4xl font-light leading-snug max-w-3xl text-stone-deep">
             Making small things that fix small problems. Sometimes they grow up.
           </p>
           <Link
             to="/projects"
-            className="link-quiet inline-block mt-12 text-sm border-b border-background/40 pb-1"
+            className="link-quiet inline-block mt-12 text-sm border-b border-foreground/40 pb-1"
           >
             Browse projects
           </Link>
