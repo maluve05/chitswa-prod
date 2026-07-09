@@ -55,6 +55,15 @@ const projects: Project[] = [
     github: "https://github.com/maluve05/chitswa-prod",
     year: "2025",
   },
+  {
+    title: "ChiClipboard",
+    description:
+      "A lightweight, ephemeral text-sharing tool. Paste text, get a shareable link — no account needed. Public pastes expire automatically.",
+    tags: ["TanStack Start", "Cloudflare D1", "React"],
+    status: "live",
+    href: "https://tools.chitswa.com/chiclipboard",
+    year: "2026",
+  },
 ];
 
 const statusLabel: Record<Status, string> = {

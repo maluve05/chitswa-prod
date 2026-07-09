@@ -58,6 +58,14 @@ function Index() {
             <Link to="/projects" className="link-quiet border-b border-foreground/40 pb-1">
               See the work
             </Link>
+            <a
+              href="https://tools.chitswa.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-quiet text-muted-foreground"
+            >
+              Tools ↗
+            </a>
             <Link to="/about" className="link-quiet text-muted-foreground">
               About →
             </Link>
