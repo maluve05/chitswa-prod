@@ -1,6 +1,10 @@
 name = "chitswa-prod"
 compatibility_date = "2026-07-09"
 compatibility_flags = ["nodejs_compat"]
+main = "dist/server/server.js"
+
+[assets]
+directory = "dist/client"
 
 [observability]
 enabled = true
