@@ -8,6 +8,11 @@ import hackathon1Asset from "@/assets/hackathon-1.webp.asset.json";
 import hackathon2Asset from "@/assets/hackathon-2.webp.asset.json";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    links: [
+      { rel: "preload", as: "image", href: presentationAsset.url, fetchpriority: "high" },
+    ],
+  }),
   component: Index,
 });
 
