@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
@@ -11,6 +12,15 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
+  const [active, setActive] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActive((prev) => (prev + 1) % 3);
+    }, 5500);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <SiteNav />
@@ -52,22 +62,25 @@ function Index() {
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-6 md:px-10 py-24">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4">
+      <section className="relative h-[75vh] min-h-[560px] overflow-hidden">
+        <div className="absolute inset-0">
           {[lisbonAsset.url, hackathon1Asset.url, hackathon2Asset.url].map((src, i) => (
-            <div key={i} className="relative aspect-[4/5] overflow-hidden bg-sand">
-              <img
-                src={src}
-                alt=""
-                aria-hidden
-                className="w-full h-full object-cover opacity-70 grayscale-[15%] transition duration-700 hover:opacity-100 hover:grayscale-0"
-              />
-            </div>
+            <img
+              key={src}
+              src={src}
+              alt=""
+              aria-hidden
+              className="absolute inset-0 w-full h-full object-cover grayscale-[20%] saturate-[0.7] transition-opacity duration-[1800ms] ease-in-out"
+              style={{ opacity: active === i ? 0.4 : 0 }}
+            />
           ))}
         </div>
-        <p className="mt-10 text-sm text-muted-foreground max-w-md font-light">
-          Notes from the road — hackathons, presentations, and the small streets of Lisbon that keep the ideas warm.
-        </p>
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/15 to-background" />
+        <div className="relative h-full max-w-6xl mx-auto px-6 md:px-10 flex items-end pb-24">
+          <p className="text-sm text-muted-foreground max-w-md font-light">
+            Notes from the road — hackathons, presentations, and the small streets of Lisbon that keep the ideas warm.
+          </p>
+        </div>
       </section>
 
       <section className="mt-16 bg-stone-deep text-background">
